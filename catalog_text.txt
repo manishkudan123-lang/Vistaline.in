@@ -1,0 +1,287 @@
+Die nos System name Picture Unit Length
+(mm)
+BLR-01 Auminum Skirting 50mm PCS 2800
+BLR-02 Auminum Skirting 100mm PCS 2800
+BLR-03 Wideline 78x25 door frame
+with rebate PCS 5500
+BLR-04 Transition Profile 30mm PCS 2800
+BLR-05 Transition Z Pro 45mm PCS 2800
+BLR-06 Corner Guard 12x12 PCS 2800
+BLR-07 Corner Guard 15x15 PCS 2800
+
+-- 1 of 21 --
+
+BLR-08 Corner Guard 19x19 PCS 2800
+BLR-09 Corner Guard 25x25 PCS 2800
+BLR-10 sticon 25x12 PCS 5300
+BLR-11 sticon 25x17 PCS 5300
+BLR-12 Hat Section 5mm PCS 2800
+BLR-13 Hat Section 7.5mm PCS 2800
+BLR-14 Hat Section 10 mm PCS 2800
+
+-- 2 of 21 --
+
+BLR-15 12x6mm T profile PCS 2800
+BLR-16 10mm T joint profile PCS 2800
+BLR-17 12mm T joint profile PCS 2800
+BLR-18 8mm eye joint profile PCS 2800
+BLR-19 10mm eye joint profile PCS 2800
+BLR-20 12mm eye joint profile PCS 2800
+BLR-21 10mm L joint profile PCS 2800
+10mm L
+joint profile
+
+-- 3 of 21 --
+
+BLR-22 12mm L joint profile PCS 2800
+PCS 5500
+PCS 5100
+BLR-24 20mm dummy cap PCS 3000
+BLR-25 Door Frame pettam patti
+45mm PCS 5500
+PCS 5500
+PCS 5100
+BLR-26 System Liniam 45x25
+Section fix
+BLR-23 System Liniam 45x45 door
+frame
+
+-- 4 of 21 --
+
+BLR-27 System Liniam 45x25
+Section male PCS 5300
+BLR-28 System Liniam 45x25
+Section female PCS 5300
+BLR-29 45mm dummy cap PCS 5500
+BLR-30 System Liniam 25x45 back
+to back PCS 5500
+BLR-30A System Liniam 25x45
+Section male back to back PCS 5300
+BLR-31 System Liniam 25x45
+Section female back to back PCS 5300
+BLR-32 system 45x45mm portal PCS 5300
+
+-- 5 of 21 --
+
+BLR-33 System Liniam 24 x 24
+Section Fix PCS 5300
+BLR-34 System Liniam 24 x 24
+Section MALE PCS 5300
+BLR-35 System Liniam 24 x 24
+Section FEMALE PCS 5300
+PCS 5500
+PCS 5100
+BLR-37 System 33x75mm style door
+top bottom male PCS 5300
+BLR-38 System 33x75mm style door
+top bottom female PCS 5300
+BLR-36 System 35x65mm vertical
+style door
+
+-- 6 of 21 --
+
+BLR-39 system 46x78mm portal PCS 5300
+BLR-40 system 75mm cap PCS 5300
+BLR-41 System Liniam 24x78
+Section fix PCS 5300
+BLR-42 system 40mm cap PCS 5300
+BLR-43 System Liniam 24x78
+Section male PCS 5300
+BLR-44 System Liniam 24x78
+Section female PCS 5300
+BLR-45 system 78x78mm portal PCS 5300
+
+-- 7 of 21 --
+
+BLR-46 System 45x75mm vertical
+style door PCS 5300
+BLR-47 System 43x75mm style door
+top bottom male PCS 5300
+BLR-48 System 43x75mm style door
+top bottom female PCS 5300
+BLR-49 Door Frame pettam patti
+56mm PCS 5300
+BLR-50 system103x103mm portal PCS 5300
+BLR-51 system 100mm cap PCS 5300
+BLR-52 System Liniam 24x103
+Section fix PCS 5300
+
+-- 8 of 21 --
+
+BLR-53 system 65mm cap PCS 5300
+BLR-54 System Liniam 24x103
+Section male PCS 5300
+BLR-55 System Liniam 24x103
+Section female PCS 5300
+BLR-56 System 24x103 double
+glezing male PCS 5300
+BLR-57 System 45x75mm vertical
+double glezing style door PCS 5500
+BLR-58
+System 43x75mm double
+glezing style door top
+bottom male
+PCS 5300
+BLR-59
+System 43x75mm double
+glezing style door top
+bottom female
+PCS 5300
+
+-- 9 of 21 --
+
+BLR-60 Auminum Skirting 75mm PCS 2800
+BLR-61 System 24x78 double
+glezing male PCS 5300
+BLR-62 100mm gypsum and cap PCS 2800
+BLR-63 150mm portal cap PCS 2800
+BLR-64 System 24x78mm fix back to
+back PCS 5500
+BLR-65 System 24x103mm fix back
+to back PCS 5500
+BLR-66 System 24x78mm double fix
+back to back PCS 5500
+
+-- 10 of 21 --
+
+BLR-67 System 24x103mm double
+fix back to back PCS 5500
+BLR-68 System 16x35 glezing style
+door top bottom female PCS 5500
+BLR-69 System 16x35 fix vertical PCS 5500
+BLR-70 System 16x35mm fix back to
+back PCS 5500
+BLR-71 sticon 13x16 PCS 5500
+BLR-72 System Liniam 16x35
+Section female PCS 5500
+BLR-73 System Liniam 16x35
+Section male PCS 5500
+
+-- 11 of 21 --
+
+BLR-74 System Liniam 31x45 door
+frame PCS 5500
+BLR-75 System 35x35 sliding track
+top PCS 5500
+BLR-76 System 12x78 sliding track
+cap top PCS 5500
+BLR-77 Wideline 103x25 door
+frame with rebate PCS 5500
+BLR-77A system46x103mm portal PCS 5300
+BLR-78 System 12x35mm sliding
+folding bottom PCS 5300
+107 In side glezing slicone
+gasket MTR
+
+-- 12 of 21 --
+
+1842 / 161 Door frame rabet slicone
+gasket MTR
+114 8mm Glezing Gasket MTR
+103 10mm Glezing Gasket MTR
+105 12mm Glezing Gasket MTR
+1841 style door soundproof seal
+slicon gasket PCS
+106 Cover Gasket MTR
+PVC50 Skriting pvc corner 50mm PCS
+
+-- 13 of 21 --
+
+PVC75 Skriting pvc corner 75mm PCS
+PVC100 Skriting pvc corner 100mm PCS
+PVC150 Skriting pvc corner 150mm PCS
+CVT6 3mm Clear VHB Tape
+6mmx7mtr PCS
+CVT8 3mm Clear VHB Tape
+8mmx7mtr PCS
+CVT10 3mm Clear VHB Tape
+10mmx7mtr PCS
+CVT12 3mm Clear VHB Tape
+12mmx7mtr PCS
+
+-- 14 of 21 --
+
+CVT16 3mm Clear VHB Tape
+16mmx7mtr PCS
+MFT24 Mirror Mount Foam Tape
+24mmx5mtr PCS
+MSR8/10 MS Rod 8mm/10mm with
+accsries PCS
+R1-FMD-01 Half door stopper PCS
+R1-PFS-090 90kg Floor spring PCS
+R1-FS-120 120kg Floor spring PCS
+R1-PF-601 Top patch PCS
+
+-- 15 of 21 --
+
+R1-PF-602 Bottom patch PCS
+R1-PF-603 Bottom patch lock PCS
+R1-PF-604 Top pivot PCS
+R1-FSACC-300
+For wooden door and style
+door accessories PCS
+R1-DC-500 Door closer PCS
+R1-DC-2000 Pelmet ARM 100kg PCS
+R1-DC-01 Mounmting Plate for door
+closer DC-2000 PCS
+
+-- 16 of 21 --
+
+R1-DC-
+1400(BO
+XER)
+Concealed door closer for
+38mm door Thikness
+Weight Capacity:60kg
+Size 32mmx45mm
+PCS
+R1-TSS-05 Butterfly Hinge 5" PCS
+R1-TSS-04 Butterfly Hinge 4" PCS
+R1-SD-01 Profile hinge PCS
+R1-TSS-054 W to G Studio lock PCS
+R1-MH-1001 Mortise handle PCS
+R1-MH-1003 Mortise handle PCS
+
+-- 17 of 21 --
+
+R1-KH-03 Ovel key hole PCS
+R1-CBSK-060 Both side key Cylinder PCS
+R1-CBSK-070 Both side key Cylinder PCS
+R1-COSK-060One side key & knob 60mm PCS
+R1-COSK-070One side key & knob 70mm PCS
+R1-ML-017 Mortise lock body PCS
+R1-ML-016 Dead Lock PCS
+
+-- 18 of 21 --
+
+DDS750 DROP DOWN SEAL 750 mm PCS
+DDS850 Drop down seal 850 mm PCS
+DDS950 Drop down seal 950 mm PCS
+DDS1050 Drop down seal 1050 mm PCS
+DDS1150 Drop down seal 1150 mm PCS
+25X300 D Handle PCS
+25X450 D handle PCS
+R1-EPH-02
+
+-- 19 of 21 --
+
+25X300X450 H handle PCS
+25X450X600 H handle PCS
+25X600X900 H handle PCS
+25X300 DB handle PCS
+25X450 DB handle PCS
+25X600 DB handle PCS
+R1-GDH-057 Handle with Integral lock
+35X1050X1500 PCS
+R1-EPH-01
+R1-GDH-056
+
+-- 20 of 21 --
+
+TB300 Stainless steel hettich flush
+bolt for style door -300mm PCS
+TB600 Stainless steel hettich flush
+bolt for style door-600mm PCS
+
+-- 21 of 21 --
+

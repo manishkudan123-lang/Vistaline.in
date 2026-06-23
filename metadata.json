@@ -1,0 +1,6 @@
+{
+  "name": "VistaLine Aluminum",
+  "description": "Corporate website for VistaLine Aluminum Profiles, featuring architectural and industrial metal extrusions.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
