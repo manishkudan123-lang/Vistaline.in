@@ -1,4 +1,4 @@
-import { Phone, MapPin, MessageCircle, ArrowUp } from 'lucide-react';
+import { Phone, MapPin, MessageCircle, ArrowUp, Linkedin, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { motion, useScroll, useMotionValueEvent } from 'motion/react';
 import { useState } from 'react';
@@ -76,6 +76,26 @@ export default function Footer() {
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               </div>
               <a href="mailto:info@vistaline.in" className="hover:text-[#FF8800] transition-colors">info@vistaline.in</a>
+            </div>
+            <div className="flex items-center gap-2 mt-5">
+              <a
+                href="https://www.linkedin.com/in/vistaline-profiles-a25b48412"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF8800] flex items-center justify-center transition-all duration-200 group"
+                aria-label="LinkedIn"
+              >
+                <Linkedin className="w-4 h-4 text-slate-300 group-hover:text-white transition-colors" />
+              </a>
+              <a
+                href="https://www.instagram.com/vistalineprofiles"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-9 h-9 rounded-full bg-white/10 hover:bg-[#FF8800] flex items-center justify-center transition-all duration-200 group"
+                aria-label="Instagram"
+              >
+                <Instagram className="w-4 h-4 text-slate-300 group-hover:text-white transition-colors" />
+              </a>
             </div>
           </motion.div>
 
