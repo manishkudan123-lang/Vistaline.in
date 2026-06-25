@@ -3,6 +3,7 @@ import { ArrowLeft, Search, SlidersHorizontal, MessageCircle, X, ZoomIn, ZoomOut
 import { Link } from 'react-router-dom';
 import { AnimatePresence, motion } from 'motion/react';
 import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
+import { useProductImageLookup } from './useProductImageLookup';
 
 function ImageWithSkeleton({ src, alt, className }: { src: string; alt: string; className?: string }) {
   const [error, setError] = useState(false);
@@ -1223,6 +1224,7 @@ export default function AllProducts() {
   const [selectedFinish, setSelectedFinish] = useState<string>('Black');
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showHardware, setShowHardware] = useState(true);
+  const getProductImage = useProductImageLookup();
 
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -1387,7 +1389,7 @@ export default function AllProducts() {
                           <div className="absolute inset-0 bg-[#FF8800]/0 group-hover/img:bg-slate-900/5 transition-all duration-300 flex items-center justify-center pointer-events-none z-10" />
                           <div className="relative w-full h-full flex items-center justify-center rounded-lg">
                             <ImageWithSkeleton
-                              src={product.image}
+                              src={getProductImage(product.name, product.image)}
                               alt={product.name}
                               className="max-w-[85%] max-h-[85%] object-contain"
                             />
@@ -1502,7 +1504,7 @@ export default function AllProducts() {
                                 <div className="absolute inset-0 bg-[#FF8800]/0 group-hover/img:bg-slate-900/5 transition-all duration-300 flex items-center justify-center pointer-events-none z-10" />
                                 <div className="relative w-full h-full flex items-center justify-center rounded-lg">
                                   <ImageWithSkeleton
-                                    src={product.image}
+                                    src={getProductImage(product.name, product.image)}
                                     alt={product.name}
                                     className="max-w-[85%] max-h-[85%] object-contain"
                                   />
@@ -1632,7 +1634,7 @@ export default function AllProducts() {
                         {() => (
                           <TransformComponent wrapperStyle={{ width: "100%", height: "100%" }} contentStyle={{ width: "100%", height: "100%", display: "flex", alignItems: "center", justifyContent: "center" }}>
                             <ImageWithSkeleton
-                              src={selectedProduct.image}
+                              src={getProductImage(selectedProduct.name, selectedProduct.image)}
                               alt={selectedProduct.name}
                               className="w-full h-[300px] md:h-[450px] object-contain relative z-10 cursor-zoom-in active:cursor-grabbing"
                             />
