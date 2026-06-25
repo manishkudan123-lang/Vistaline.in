@@ -741,7 +741,7 @@ const productsData: Product[] = [
   {
     id: "blr-50",
     code: "BLR-50",
-    name: "system103x103mm portal",
+    name: "system 103x103mm portal",
     category: "Door Sections",
     image: getImageUrl("photo_052"),
     desc: "Commercial strength system103x103mm portal profile designed to provide ultimate durability, weather clipping, and soundproofing for partition entries.",
