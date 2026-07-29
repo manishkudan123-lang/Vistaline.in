@@ -395,7 +395,7 @@ function PartitionCard({ partition, index, onImageClick }: { partition: typeof p
         )}
 
         <motion.a
-          href={`https://wa.me/919100044124?text=Hi!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(partition.name)}`}
+          href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(partition.name)}`}
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}
@@ -514,7 +514,7 @@ export default function Showcase() {
                 Our team is ready to guide you to the right partition system for your project.
               </p>
               <motion.a
-                href="https://wa.me/919100044124?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20VISTALINE%20partition%20systems"
+                href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20VISTALINE%20partition%20systems"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, y: -2 }}

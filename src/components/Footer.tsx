@@ -69,7 +69,7 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
                 <Phone className="w-4 h-4" />
               </div>
-              <span>+91 91000 44124</span>
+              <span>+91 91000 44126</span>
             </div>
             <div className="flex items-center gap-3 text-slate-300 font-semibold text-sm mt-3">
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
@@ -135,7 +135,7 @@ export default function Footer() {
           >
             <h4 className="text-white font-bold mb-5 uppercase text-xs tracking-widest">Talk To Us</h4>
             <motion.a
-              href="https://wa.me/919100044124?text=Hi,%20I'm%20exploring%20premium%20partition%20systems%20for%20my%20office."
+              href="https://wa.me/919100044126?text=Hi,%20I'm%20exploring%20premium%20partition%20systems%20for%20my%20office."
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -1 }}

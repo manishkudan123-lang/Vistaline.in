@@ -17,7 +17,7 @@ export default function CTA() {
     }
     setSubmitted(true);
     const text = `*New Quote Request*\n\n*Name:* ${formData.name}\n*Phone:* ${formData.phone}\n*Message:* ${formData.message || 'Not provided'}`;
-    window.open(`https://wa.me/919100044124?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/919100044126?text=${encodeURIComponent(text)}`, '_blank');
     setTimeout(() => {
       setSubmitted(false);
       setFormData({ name: '', phone: '', message: '' });
@@ -67,7 +67,7 @@ export default function CTA() {
               <motion.div whileHover={{ scale: 1.04 }} whileTap={{ scale: 0.96 }}>
                 <a
                   ref={whatsappRef}
-                  href="https://wa.me/919100044124?text=Hi,%20I%20want%20a%20free%20quote%20for%20my%20office%20partitions."
+                  href="https://wa.me/919100044126?text=Hi,%20I%20want%20a%20free%20quote%20for%20my%20office%20partitions."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group btn-island px-7 py-4 rounded-full bg-[#00E676] text-[#0A3D73] font-bold hover:bg-[#00c853] transition-all duration-200 shadow-xl text-sm"
@@ -86,13 +86,13 @@ export default function CTA() {
                 </a>
               </motion.div>
               <motion.a
-                href="tel:+919100044124"
+                href="tel:+919100044126"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="px-7 py-4 rounded-full bg-transparent border-2 border-white/20 text-white font-bold hover:bg-white/10 hover:border-white/30 transition-all duration-200 flex items-center gap-2 text-sm"
               >
                 <Phone className="w-4 h-4" />
-                +91 91000 44124
+                +91 91000 44126
               </motion.a>
             </div>
 

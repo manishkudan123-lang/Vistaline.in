@@ -9,7 +9,7 @@ export default function Contact() {
   const [copied, setCopied] = useState(false);
 
   const handleCopy = () => {
-    navigator.clipboard.writeText('+919100044124');
+    navigator.clipboard.writeText('+919100044126');
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
   };
@@ -29,7 +29,7 @@ export default function Contact() {
     if (formData.name) text += `*Name:* ${formData.name}\n`;
     if (formData.phone) text += `*Phone:* ${formData.phone}\n`;
     if (formData.message) text += `*Requirement:* ${formData.message}\n`;
-    window.open(`https://wa.me/919100044124?text=${encodeURIComponent(text)}`, '_blank');
+    window.open(`https://wa.me/919100044126?text=${encodeURIComponent(text)}`, '_blank');
   };
 
   return (
@@ -72,7 +72,7 @@ export default function Contact() {
                   <h4 className="text-lg font-bold text-[#1C1B1B] mb-1">Deal Direct with the Owner</h4>
                   <p className="text-xs text-slate-700 mb-4">Skip the sales team—chat with the founder directly on WhatsApp for the best price & honest advice.</p>
                   <motion.a
-                    href="https://wa.me/919100044124?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
+                    href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
                     target="_blank"
                     rel="noopener noreferrer"
                     whileHover={{ scale: 1.02 }}
@@ -91,13 +91,13 @@ export default function Contact() {
               transition={{ duration: 0.2, ease: [0.25, 0.1, 0.25, 1] }}
               className="bg-white border border-slate-200/60 rounded-xl p-4 flex items-center justify-between hover:shadow-lg transition-shadow duration-200"
             >
-              <a href="tel:+919100044124" className="flex items-center gap-4 flex-1">
+              <a href="tel:+919100044126" className="flex items-center gap-4 flex-1">
                 <div className="w-10 h-10 rounded-full bg-[#FF8800]/10 flex items-center justify-center shrink-0">
                   <Phone className="w-4 h-4 text-[#FF8800]" />
                 </div>
                 <div>
                   <p className="text-xs text-slate-700">Phone & WhatsApp — tap to call</p>
-                  <p className="text-lg font-bold text-[#1C1B1B]">+91 91000 44124</p>
+                  <p className="text-lg font-bold text-[#1C1B1B]">+91 91000 44126</p>
                 </div>
               </a>
               <motion.button

@@ -41,7 +41,7 @@ function NavLink({ link, isActive, onClick, key: _key }: { link: typeof navLinks
 function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/919100044124?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
+      href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.03 }}
@@ -190,7 +190,7 @@ export default function Navbar() {
                 className="mt-6"
               >
                 <a
-                  href="https://wa.me/919100044124?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
+                  href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-3 bg-[#FF8800] hover:bg-[#E67700] text-white px-10 py-3.5 rounded-xl text-lg font-bold shadow-md shadow-[#FF8800]/20 transition-all duration-200"

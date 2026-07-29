@@ -1441,7 +1441,7 @@ export default function AllProducts() {
                           </div>
 
                           <a
-                            href={`https://wa.me/919100044124?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
+                            href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-2.5 rounded-xl bg-[#FF8800] text-white text-xs font-bold hover:bg-[#E67700] active:bg-[#D66600] transition-all duration-200 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md cursor-pointer text-center"
@@ -1556,7 +1556,7 @@ export default function AllProducts() {
                                 </div>
 
                                 <a
-                                  href={`https://wa.me/919100044124?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
+                                  href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="w-full py-2.5 rounded-xl bg-[#FF8800] text-white text-xs font-bold hover:bg-[#E67700] active:bg-[#D66600] transition-all duration-200 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md cursor-pointer text-center"
@@ -1703,7 +1703,7 @@ export default function AllProducts() {
 
                     <div className="flex flex-col md:flex-row gap-4 relative z-20">
                       <a
-                        href={`https://wa.me/919100044124?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(selectedProduct.code)}%20-%20${encodeURIComponent(selectedProduct.name)}%20(${encodeURIComponent(selectedFinish)}%20Finish)`}
+                        href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(selectedProduct.code)}%20-%20${encodeURIComponent(selectedProduct.name)}%20(${encodeURIComponent(selectedFinish)}%20Finish)`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
@@ -1713,7 +1713,7 @@ export default function AllProducts() {
                         Get Best Price on WhatsApp
                       </a>
                       <a
-                        href="tel:+919100044124"
+                        href="tel:+919100044126"
                         onClick={(e) => e.stopPropagation()}
                         className="flex-1 bg-white/10 border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-white font-bold py-4 rounded-2xl text-center text-lg flex justify-center items-center gap-2 shadow-lg hover:-translate-y-0.5"
                       >
