@@ -154,6 +154,18 @@ export default function Footer() {
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
               <span>Plot No. 7 & 8, Thondapally, Shamshabad—501218, Telangana</span>
             </div>
+            <div className="mt-6 flex items-start gap-3 text-slate-400 text-sm">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+              <span>Sy.No. 42, Avalahalli Main Road, near East Point Hospital, Cheemasandra, Bidarahalli, Bengaluru, Karnataka 560049</span>
+            </div>
+            <div className="mt-6 flex items-start gap-3 text-slate-400 text-sm">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+              <span>32, Lane No. 3, Utkarsha Society, Vighnaharta Nagar, Katraj, Pune, Maharashtra 411046</span>
+            </div>
+            <div className="mt-6 flex items-start gap-3 text-slate-400 text-sm">
+              <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
+              <span>ground floor, North facing, 42, 5th Cross St, Venkateswara Nagar, Perungudi, Chennai, Tamil Nadu 600096</span>
+            </div>
           </motion.div>
         </div>
 
