@@ -17,6 +17,9 @@ export interface CityInfo {
   popularSystems: { name: string; tag: string; desc: string }[];
   highlights: string[];
   testimonial: { quote: string; author: string; role: string; project: string };
+  metaTitle?: string;
+  metaDescription?: string;
+  keywords?: string[];
 }
 
 export const CITIES_DATA: Record<string, CityInfo> = {
@@ -247,6 +250,16 @@ export const CITIES_DATA: Record<string, CityInfo> = {
       role: 'Project Head, UrbanSpace Turnkey',
       project: 'Perungudi, Chennai',
     },
+    metaTitle: 'Aluminium & Glass Partitions in Chennai | VISTALINE™',
+    metaDescription: 'Vistaline Chennai supplies and installs premium aluminium and acoustic glass partition systems for offices and commercial spaces across Perungudi, OMR, Guindy and Chennai. Call +91 8764131313.',
+    keywords: [
+      'aluminium partitions chennai',
+      'glass partitions chennai',
+      'office partition perungudi',
+      'acoustic glass partitions chennai',
+      'modular office cabins chennai',
+      'vistaline chennai'
+    ],
   },
   coimbatore: {
     id: 'coimbatore',

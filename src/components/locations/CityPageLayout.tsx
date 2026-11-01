@@ -17,6 +17,7 @@ import {
 import { motion } from 'motion/react';
 import { CityInfo, CITIES_LIST } from '../../data/citiesData';
 import { setStoredLocationId } from '../../utils/locationStorage';
+import SEOHead from '../SEOHead';
 
 export default function CityPageLayout({ city }: { city: CityInfo }) {
   const [formName, setFormName] = useState('');
@@ -44,6 +45,9 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
 
   return (
     <div className="min-h-screen bg-[#FCF9F8] pt-24 pb-20">
+      {/* Dynamic SEO Meta Tags & Document Title */}
+      <SEOHead city={city} />
+
       {/* Hero Section */}
       <section className="relative overflow-hidden pt-4">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">

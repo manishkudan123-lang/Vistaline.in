@@ -15,6 +15,7 @@ import Footer from './components/Footer';
 import Marquee from './components/Marquee';
 import CatalogueButton from './components/CatalogueButton';
 import Gallery from './components/Gallery';
+import SEOHead from './components/SEOHead';
 import {
   HyderabadPage,
   BangalorePage,
@@ -165,6 +166,7 @@ export default function App() {
   return (
     <BrowserRouter>
       <div className="min-h-screen bg-[#FCF9F8] font-sans text-[#1C1B1B]">
+        <SEOHead />
         <ScrollProgress />
         <ScrollToTop />
         <Navbar />
