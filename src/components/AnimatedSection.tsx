@@ -54,7 +54,7 @@ export function StaggerGrid({ children, className }: { children: React.ReactNode
   );
 }
 
-export function StaggerItem({ children, className }: { children: React.ReactNode; className?: string; key?: number | string }) {
+export function StaggerItem({ children, className }: { children: React.ReactNode; className?: string }) {
   return (
     <motion.div
       variants={{

@@ -3,6 +3,9 @@ import { Menu, X, MessageCircle } from 'lucide-react';
 import { Link, useLocation } from 'react-router-dom';
 import { motion, useMotionValueEvent, useScroll, AnimatePresence } from 'motion/react';
 import Logo from './Logo';
+import LocationsDropdown from './LocationsDropdown';
+import { CITIES_LIST } from '../data/citiesData';
+import { useSelectedLocation, setStoredLocationId } from '../utils/locationStorage';
 
 const navLinks = [
   { path: '/', label: 'Home' },
@@ -12,7 +15,7 @@ const navLinks = [
   { path: '/contact', label: 'Contact' },
 ];
 
-function NavLink({ link, isActive, onClick, key: _key }: { link: typeof navLinks[0]; isActive: boolean; onClick: (e: MouseEvent<HTMLAnchorElement>) => void; key?: string }) {
+function NavLink({ link, isActive, onClick }: { link: typeof navLinks[0]; isActive: boolean; onClick: (e: MouseEvent<HTMLAnchorElement>) => void; key?: string | number }) {
   return (
     <Link
       to={link.path}
@@ -59,6 +62,7 @@ export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [scrollY, setScrollY] = useState(0);
   const { scrollY: scrollYMotion } = useScroll();
+  const [storedCityId] = useSelectedLocation();
 
   const scrolled = scrollY > 40;
 
@@ -120,8 +124,9 @@ export default function Navbar() {
             })}
           </div>
 
-          {/* Desktop CTA */}
-          <div className="hidden md:flex items-center gap-3">
+          {/* Desktop CTA: Locations & WhatsApp */}
+          <div className="hidden md:flex items-center gap-2.5">
+            <LocationsDropdown />
             <WhatsAppButton />
           </div>
 
@@ -155,26 +160,26 @@ export default function Navbar() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
-            className="fixed inset-0 top-0 bg-[#0A3D73] z-40 md:hidden"
+            className="fixed inset-0 top-0 bg-[#0A3D73] z-40 md:hidden overflow-y-auto"
           >
-            <div className="flex flex-col items-center justify-center h-full gap-2 px-6">
+            <div className="flex flex-col items-center justify-center min-h-full py-20 px-6 gap-2">
               {navLinks.map((link, i) => {
                 const isActive = location.pathname === link.path;
                 return (
                   <motion.div
                     key={link.path}
-                    initial={{ opacity: 0, y: 20 }}
+                    initial={{ opacity: 0, y: 15 }}
                     animate={{ opacity: 1, y: 0 }}
                     exit={{ opacity: 0, y: -10 }}
-                    transition={{ duration: 0.3, delay: i * 0.06, ease: [0.25, 0.1, 0.25, 1] }}
+                    transition={{ duration: 0.25, delay: i * 0.04 }}
                   >
                     <Link
                       to={link.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`block text-center px-10 py-3.5 rounded-xl text-xl font-bold tracking-tight transition-all duration-200 ${
+                      className={`block text-center px-8 py-2.5 rounded-xl text-lg font-bold tracking-tight transition-all duration-200 ${
                         isActive
                           ? 'text-white bg-[#FF8800] shadow-md shadow-[#FF8800]/20'
-                          : 'text-white/70 hover:text-white hover:bg-[#FF8800]'
+                          : 'text-white/80 hover:text-white hover:bg-white/10'
                       }`}
                     >
                       {link.label}
@@ -182,18 +187,48 @@ export default function Navbar() {
                   </motion.div>
                 );
               })}
+
+              {/* Mobile Locations quick grid */}
+              <div className="w-full max-w-sm mt-4 pt-4 border-t border-white/15">
+                <div className="text-center text-xs font-bold uppercase tracking-wider text-amber-300 mb-2.5">
+                  Select City / Regional Hub
+                </div>
+                <div className="grid grid-cols-2 gap-1.5">
+                  {CITIES_LIST.map((city) => {
+                    const isActive = location.pathname === `/${city.id}` || location.pathname === `/locations/${city.id}` || storedCityId === city.id;
+                    return (
+                      <Link
+                        key={city.id}
+                        to={`/${city.id}`}
+                        onClick={() => {
+                          setStoredLocationId(city.id);
+                          setIsMobileMenuOpen(false);
+                        }}
+                        className={`text-center py-2 px-2 rounded-lg text-xs font-semibold transition-all ${
+                          isActive
+                            ? 'bg-[#FF8800] text-white shadow-sm'
+                            : 'bg-white/10 text-white/90 hover:bg-white/20'
+                        }`}
+                      >
+                        {city.name}
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
+
               <motion.div
-                initial={{ opacity: 0, y: 20 }}
+                initial={{ opacity: 0, y: 15 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: -10 }}
-                transition={{ duration: 0.3, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
-                className="mt-6"
+                transition={{ duration: 0.3, delay: 0.2 }}
+                className="mt-4 w-full max-w-sm"
               >
                 <a
                   href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="flex items-center justify-center gap-3 bg-[#FF8800] hover:bg-[#E67700] text-white px-10 py-3.5 rounded-xl text-lg font-bold shadow-md shadow-[#FF8800]/20 transition-all duration-200"
+                  className="flex items-center justify-center gap-2.5 bg-[#FF8800] hover:bg-[#E67700] text-white py-3 rounded-xl text-base font-bold shadow-md shadow-[#FF8800]/20 transition-all duration-200"
                 >
                   <MessageCircle className="w-5 h-5" />
                   WhatsApp Us

@@ -7,9 +7,12 @@ export function useGoogleDriveFolder(folderId: string): Array<{ url: string; nam
   const [images, setImages] = useState<Array<{ url: string; name: string }>>(() => imageCache.get(folderId) ?? []);
 
   useEffect(() => {
-    if (imageCache.has(folderId)) return;
+    const cached = imageCache.get(folderId);
+    if (cached && cached.length > 0) {
+      setImages(cached);
+      return;
+    }
     if (!API_KEY) {
-      imageCache.set(folderId, []);
       setImages([]);
       return;
     }

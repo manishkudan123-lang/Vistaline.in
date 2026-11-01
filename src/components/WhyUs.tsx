@@ -63,7 +63,7 @@ function AnimatedCount({ value, suffix }: { value: number; suffix: string }) {
   );
 }
 
-function ReasonCard({ r, i, style: trailStyle, key: _key }: { r: typeof reasons[0]; i: number; style: any; key?: number }) {
+function ReasonCard({ r, i, style: trailStyle }: { r: typeof reasons[0]; i: number; style: any; key?: string | number }) {
   const tiltRef = useTilt<HTMLDivElement>(4);
   const Icon = r.icon;
   const isCounterCard = r.title === '500+ Projects Done';

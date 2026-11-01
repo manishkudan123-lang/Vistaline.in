@@ -145,7 +145,7 @@ export default function Contact() {
               <h4 className="text-xl font-bold text-[#1C1B1B] mb-6">Send an Inquiry via WhatsApp</h4>
               <form className="space-y-4" onSubmit={handleSendInquiry}>
                 <div className="space-y-4">
-                    <div>
+                  <div>
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5">Full Name</label>
                     <motion.div whileFocus={{ scale: 1.01 }} className="relative">
                       <input
@@ -159,7 +159,7 @@ export default function Contact() {
                     </motion.div>
                     {fieldErrors.name && <p className="text-red-500 text-xs mt-1">{fieldErrors.name}</p>}
                   </div>
-                    <div>
+                  <div>
                     <label className="block text-xs font-semibold text-slate-600 mb-1.5">Phone Number</label>
                     <motion.div whileFocus={{ scale: 1.01 }}>
                       <input
@@ -234,6 +234,70 @@ export default function Contact() {
               <iframe
                 src="https://www.google.com/maps?q=Plot+No.+7+%26+8,+Sy+No.+164/B1/A,+Thondapally,+Shamshabad+-+501218,+Telangana&output=embed"
                 title="Hyderabad Office Map"
+                className="w-1/3 min-h-[160px]"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="flex bg-white rounded-xl overflow-hidden border border-slate-200/60 hover:border-[#FF8800]/20 transition-colors">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-[#FF8800]" />
+                  <span className="text-xs font-bold tracking-wider text-slate-700 uppercase">Bangalore</span>
+                </div>
+                <h5 className="font-bold text-[#1C1B1B] text-sm mb-2">Bangalore Office</h5>
+                <p className="font-semibold text-slate-800 text-sm mb-2">Vistaline Profiles Pvt. Ltd.</p>
+                <p className="text-xs text-slate-600 leading-relaxed mb-4">
+                  Sy.No. 42, Avalahalli Main Road, <br />
+                  near East Point Hospital, Cheemasandra, Bidarahalli, <br />
+                  Bengaluru, Karnataka 560049
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/PiHwhtJFBnjFXPsf7"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF8800] hover:text-[#E67700] transition-colors"
+                >
+                  Open in Google Maps <ArrowRight className="w-3 h-3" />
+                </a>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3886.6787132713926!2d77.7179128!3d13.0561112!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1100697ca13b%3A0x5254ed3daa8625f3!2sVISTALINE%20PROFILES%20PRIVATE%20LIMITED%20BANGALORE!5e0!3m2!1sen!2sin!4v1792667366537!5m2!1sen!2sin"
+                title="Bangalore Office Map"
+                className="w-1/3 min-h-[160px]"
+                style={{ border: 0 }}
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            <div className="flex bg-white rounded-xl overflow-hidden border border-slate-200/60 hover:border-[#FF8800]/20 transition-colors">
+              <div className="p-6 flex-1">
+                <div className="flex items-center gap-2 mb-4">
+                  <MapPin className="w-4 h-4 text-[#FF8800]" />
+                  <span className="text-xs font-bold tracking-wider text-slate-700 uppercase">Pune</span>
+                </div>
+                <h5 className="font-bold text-[#1C1B1B] text-sm mb-2">Pune Office</h5>
+                <p className="font-semibold text-slate-800 text-sm mb-2">Vistaline Profiles Pvt. Ltd.</p>
+                <p className="text-xs text-slate-600 leading-relaxed mb-4">
+                  32, Lane No. 3, Utkarsha Society, <br />
+                  Vighnaharta Nagar, Katraj, <br />
+                  Pune, Maharashtra 411046
+                </p>
+                <a
+                  href="https://maps.app.goo.gl/zRTGKEwHEPChmvPz5"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF8800] hover:text-[#E67700] transition-colors"
+                >
+                  Open in Google Maps <ArrowRight className="w-3 h-3" />
+                </a>
+              </div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3784.8507076837177!2d73.86281837496102!3d18.445086382633903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc2eb000773a855%3A0x1a8b6c4a27573d63!2sVISTALINE%20PROFILES%20PRIVATE%20LIMITED%20PUNE!5e0!3m2!1sen!2sin!4v1792667885362!5m2!1sen!2sin"
+                title="Pune Office Map"
                 className="w-1/3 min-h-[160px]"
                 style={{ border: 0 }}
                 loading="lazy"

@@ -8,9 +8,12 @@ export function useProductImageLookup(): (name: string, fallback: string) => str
   const [nameMap, setNameMap] = useState<Record<string, string>>(() => lookupCache.get(PRODUCT_IMAGES_FOLDER_ID) ?? {});
 
   useEffect(() => {
-    if (lookupCache.has(PRODUCT_IMAGES_FOLDER_ID)) return;
+    const cached = lookupCache.get(PRODUCT_IMAGES_FOLDER_ID);
+    if (cached && Object.keys(cached).length > 0) {
+      setNameMap(cached);
+      return;
+    }
     if (!API_KEY) {
-      lookupCache.set(PRODUCT_IMAGES_FOLDER_ID, {});
       setNameMap({});
       return;
     }

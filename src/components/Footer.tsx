@@ -19,7 +19,7 @@ const footerLinks = {
   ],
 };
 
-function FooterLink({ label, path, delay, key: _key }: { label: string; path: string; delay: number; key?: string | null }) {
+function FooterLink({ label, path, delay }: { label: string; path: string; delay: number; key?: string | number }) {
   return (
     <motion.li
       initial={{ opacity: 0, y: 10 }}

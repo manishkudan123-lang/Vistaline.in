@@ -57,7 +57,7 @@ function AnimatedTitle() {
   );
 }
 
-function ServiceCard({ s, i, style: trailStyle, key: _key }: { s: typeof services[0]; i: number; style: any; key?: number }) {
+function ServiceCard({ s, i, style: trailStyle }: { s: typeof services[0]; i: number; style: any; key?: string | number }) {
   const tiltRef = useTilt<HTMLDivElement>(3);
   const Icon = s.icon;
 

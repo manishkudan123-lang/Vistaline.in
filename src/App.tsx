@@ -15,6 +15,19 @@ import Footer from './components/Footer';
 import Marquee from './components/Marquee';
 import CatalogueButton from './components/CatalogueButton';
 import Gallery from './components/Gallery';
+import {
+  HyderabadPage,
+  BangalorePage,
+  PunePage,
+  NagpurPage,
+  ChennaiPage,
+  CoimbatorePage,
+  MysuruPage,
+  KochiPage,
+  VisakhapatnamPage,
+  ThiruvananthapuramPage,
+  CityDynamicRoute,
+} from './components/locations';
 
 function ScrollProgress() {
   const { scrollYProgress } = useScroll();
@@ -110,6 +123,39 @@ function AnimatedRoutes() {
         <Route path="/products" element={<PageWrapper><AllProducts /></PageWrapper>} />
         <Route path="/contact" element={<PageWrapper><div className="pt-24 pb-12"><Contact /></div></PageWrapper>} />
         <Route path="/gallery" element={<PageWrapper><Gallery /></PageWrapper>} />
+        
+        {/* Direct City Routes: /city_name */}
+        <Route path="/hyderabad" element={<PageWrapper><HyderabadPage /></PageWrapper>} />
+        <Route path="/bangalore" element={<PageWrapper><BangalorePage /></PageWrapper>} />
+        <Route path="/pune" element={<PageWrapper><PunePage /></PageWrapper>} />
+        <Route path="/nagpur" element={<PageWrapper><NagpurPage /></PageWrapper>} />
+        <Route path="/chennai" element={<PageWrapper><ChennaiPage /></PageWrapper>} />
+        <Route path="/coimbatore" element={<PageWrapper><CoimbatorePage /></PageWrapper>} />
+        <Route path="/koimbotur" element={<PageWrapper><CoimbatorePage /></PageWrapper>} />
+        <Route path="/mysuru" element={<PageWrapper><MysuruPage /></PageWrapper>} />
+        <Route path="/maysuru" element={<PageWrapper><MysuruPage /></PageWrapper>} />
+        <Route path="/kochi" element={<PageWrapper><KochiPage /></PageWrapper>} />
+        <Route path="/visakhapatnam" element={<PageWrapper><VisakhapatnamPage /></PageWrapper>} />
+        <Route path="/vishakapatnam" element={<PageWrapper><VisakhapatnamPage /></PageWrapper>} />
+        <Route path="/thiruvananthapuram" element={<PageWrapper><ThiruvananthapuramPage /></PageWrapper>} />
+        <Route path="/triventanampuram" element={<PageWrapper><ThiruvananthapuramPage /></PageWrapper>} />
+
+        {/* Legacy /locations/:cityId routes supported for backward-compatibility */}
+        <Route path="/locations/hyderabad" element={<PageWrapper><HyderabadPage /></PageWrapper>} />
+        <Route path="/locations/bangalore" element={<PageWrapper><BangalorePage /></PageWrapper>} />
+        <Route path="/locations/pune" element={<PageWrapper><PunePage /></PageWrapper>} />
+        <Route path="/locations/nagpur" element={<PageWrapper><NagpurPage /></PageWrapper>} />
+        <Route path="/locations/chennai" element={<PageWrapper><ChennaiPage /></PageWrapper>} />
+        <Route path="/locations/coimbatore" element={<PageWrapper><CoimbatorePage /></PageWrapper>} />
+        <Route path="/locations/koimbotur" element={<PageWrapper><CoimbatorePage /></PageWrapper>} />
+        <Route path="/locations/mysuru" element={<PageWrapper><MysuruPage /></PageWrapper>} />
+        <Route path="/locations/maysuru" element={<PageWrapper><MysuruPage /></PageWrapper>} />
+        <Route path="/locations/kochi" element={<PageWrapper><KochiPage /></PageWrapper>} />
+        <Route path="/locations/visakhapatnam" element={<PageWrapper><VisakhapatnamPage /></PageWrapper>} />
+        <Route path="/locations/vishakapatnam" element={<PageWrapper><VisakhapatnamPage /></PageWrapper>} />
+        <Route path="/locations/thiruvananthapuram" element={<PageWrapper><ThiruvananthapuramPage /></PageWrapper>} />
+        <Route path="/locations/triventanampuram" element={<PageWrapper><ThiruvananthapuramPage /></PageWrapper>} />
+        <Route path="/locations/:cityId" element={<PageWrapper><CityDynamicRoute /></PageWrapper>} />
       </RoutesWithKey>
     </AnimatePresence>
   );

@@ -5,12 +5,18 @@ import { TransformWrapper, TransformComponent } from 'react-zoom-pan-pinch';
 import { useTilt } from './useTilt';
 import { useGoogleDriveFolder } from './useGoogleDriveFolder';
 
-function ImageWithSkeleton({ src, alt, className }: { src: string; alt: string; className?: string }) {
+function ImageWithSkeleton({ src, alt, className }: { src?: string; alt: string; className?: string }) {
   const [highResLoaded, setHighResLoaded] = useState(false);
   const [lowResLoaded, setLowResLoaded] = useState(false);
   const [error, setError] = useState(false);
 
-  const getLowResUrl = (url: string) => {
+  useEffect(() => {
+    setHighResLoaded(false);
+    setLowResLoaded(false);
+    setError(false);
+  }, [src]);
+
+  const getLowResUrl = (url?: string) => {
     if (!url) return '';
     if (url.includes('drive.google.com')) {
       if (url.includes('sz=')) return url.replace(/sz=w\d+/, 'sz=w100');
@@ -20,6 +26,15 @@ function ImageWithSkeleton({ src, alt, className }: { src: string; alt: string; 
   };
 
   const lowResSrc = getLowResUrl(src);
+
+  if (!src) {
+    return (
+      <div className="absolute inset-0 flex items-center justify-center bg-slate-100 z-0 rounded-[inherit] overflow-hidden">
+        <div className="absolute inset-0 animate-shimmer" />
+        <div className="w-8 h-8 rounded-full border-2 border-slate-200 border-t-[#FF8800] animate-spin relative z-10" />
+      </div>
+    );
+  }
 
   return (
     <>
@@ -31,25 +46,21 @@ function ImageWithSkeleton({ src, alt, className }: { src: string; alt: string; 
       )}
       {!error && lowResSrc && (
         <img
-          src={lowResSrc || undefined}
+          src={lowResSrc}
           alt=""
-          loading="lazy"
           referrerPolicy="no-referrer"
           onLoad={() => setLowResLoaded(true)}
           className={`${className} absolute inset-0 w-full h-full object-cover filter blur-lg scale-105 transition-opacity duration-500 z-10 ${highResLoaded ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}
         />
       )}
-      {src && (
-        <img
-          src={src || undefined}
-          alt={alt}
-          loading="lazy"
-          referrerPolicy="no-referrer"
-          onLoad={() => setHighResLoaded(true)}
-          onError={() => { setHighResLoaded(true); setError(true); }}
-          className={`${className} relative z-10 ${highResLoaded && !error ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} transition-all duration-700 ease-out`}
-        />
-      )}
+      <img
+        src={src}
+        alt={alt}
+        referrerPolicy="no-referrer"
+        onLoad={() => setHighResLoaded(true)}
+        onError={() => { setHighResLoaded(true); setError(true); }}
+        className={`${className} relative z-10 ${highResLoaded && !error ? 'opacity-100 scale-100' : 'opacity-0 scale-95'} transition-all duration-500 ease-out`}
+      />
       {error && (
         <div className="absolute inset-0 flex flex-col items-center justify-center text-slate-400 bg-slate-100 z-20 rounded-[inherit]">
           <svg className="w-12 h-12 mb-2 opacity-20" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -242,7 +253,7 @@ const partitions = [
   },
 ];
 
-function PartitionCard({ partition, index, onImageClick }: { partition: typeof partitions[0]; index: number; onImageClick: (src: string) => void; key?: string }) {
+function PartitionCard({ partition, index, onImageClick }: { partition: typeof partitions[0]; index: number; onImageClick: (src: string) => void; key?: string | number }) {
   const tiltRef = useTilt<HTMLDivElement>(4);
   const images = useGoogleDriveFolder(partition.folderId);
   const sliderImages = images.filter(i => !i.name.toUpperCase().includes('PROFILE'));
@@ -386,6 +397,7 @@ function PartitionCard({ partition, index, onImageClick }: { partition: typeof p
                   <img
                     src={img.url}
                     alt={`${partition.name} profile ${j + 1}`}
+                    referrerPolicy="no-referrer"
                     className="w-full h-full object-cover"
                   />
                 </button>
