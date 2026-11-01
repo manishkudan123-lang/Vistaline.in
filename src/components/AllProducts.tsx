@@ -1301,11 +1301,10 @@ export default function AllProducts() {
                 <button
                   key={cat}
                   onClick={() => setSelectedCategory(cat)}
-                  className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${
-                    isActive
+                  className={`px-4 py-2 rounded-xl text-xs font-bold whitespace-nowrap transition-all ${isActive
                       ? 'bg-[#FF8800]/10 text-[#FF8800] border border-[#FF8800]/30'
                       : 'border border-slate-200/50 hover:bg-slate-50 text-slate-600 hover:text-slate-900'
-                  }`}
+                    }`}
                 >
                   {cat === 'All' ? `All Products (${productsData.length})` : cat}
                 </button>
@@ -1340,9 +1339,8 @@ export default function AllProducts() {
                         <button
                           key={cat}
                           onClick={() => { setSelectedCategory(cat); setIsDropdownOpen(false); }}
-                          className={`w-full text-left px-4 py-3 text-xs font-bold flex items-center justify-between transition-colors ${
-                            isActive ? 'bg-[#FFF0E0] text-[#FF8800]' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
-                          }`}
+                          className={`w-full text-left px-4 py-3 text-xs font-bold flex items-center justify-between transition-colors ${isActive ? 'bg-[#FFF0E0] text-[#FF8800]' : 'text-slate-600 hover:bg-slate-50 hover:text-slate-900'
+                            }`}
                         >
                           {cat === 'All' ? `All Products (${productsData.length})` : cat}
                           {isActive && <span className="w-1.5 h-1.5 rounded-full bg-[#FF8800]" />}
@@ -1441,7 +1439,7 @@ export default function AllProducts() {
                           </div>
 
                           <a
-                            href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
+                            href={`https://wa.me/918764131313?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
                             target="_blank"
                             rel="noopener noreferrer"
                             className="w-full py-2.5 rounded-xl bg-[#FF8800] text-white text-xs font-bold hover:bg-[#E67700] active:bg-[#D66600] transition-all duration-200 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md cursor-pointer text-center"
@@ -1556,7 +1554,7 @@ export default function AllProducts() {
                                 </div>
 
                                 <a
-                                  href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
+                                  href={`https://wa.me/918764131313?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(product.code)}%20-%20${encodeURIComponent(product.name)}`}
                                   target="_blank"
                                   rel="noopener noreferrer"
                                   className="w-full py-2.5 rounded-xl bg-[#FF8800] text-white text-xs font-bold hover:bg-[#E67700] active:bg-[#D66600] transition-all duration-200 flex items-center justify-center gap-1.5 shadow-sm hover:shadow-md cursor-pointer text-center"
@@ -1604,7 +1602,7 @@ export default function AllProducts() {
                   initial={{ opacity: 0, scale: 0.95 }}
                   animate={{ opacity: 1, scale: 1 }}
                   exit={{ opacity: 0, scale: 0.95 }}
-                   transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
+                  transition={{ duration: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
                   onClick={(e) => e.stopPropagation()}
                   className="bg-gradient-to-br from-[#FF8800] to-[#E67700] w-full max-w-4xl rounded-3xl shadow-2xl relative flex flex-col"
                 >
@@ -1703,7 +1701,7 @@ export default function AllProducts() {
 
                     <div className="flex flex-col md:flex-row gap-4 relative z-20">
                       <a
-                        href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(selectedProduct.code)}%20-%20${encodeURIComponent(selectedProduct.name)}%20(${encodeURIComponent(selectedFinish)}%20Finish)`}
+                        href={`https://wa.me/918764131313?text=Hi!%20I%20want%20to%20inquire%20about%20product:%20${encodeURIComponent(selectedProduct.code)}%20-%20${encodeURIComponent(selectedProduct.name)}%20(${encodeURIComponent(selectedFinish)}%20Finish)`}
                         target="_blank"
                         rel="noopener noreferrer"
                         onClick={(e) => e.stopPropagation()}
@@ -1713,7 +1711,7 @@ export default function AllProducts() {
                         Get Best Price on WhatsApp
                       </a>
                       <a
-                        href="tel:+919100044126"
+                        href="tel:+918764131313"
                         onClick={(e) => e.stopPropagation()}
                         className="flex-1 bg-white/10 border-2 border-white/30 hover:bg-white/20 transition-all duration-300 text-white font-bold py-4 rounded-2xl text-center text-lg flex justify-center items-center gap-2 shadow-lg hover:-translate-y-0.5"
                       >

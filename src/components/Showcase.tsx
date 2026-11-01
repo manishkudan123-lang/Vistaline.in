@@ -338,9 +338,8 @@ function PartitionCard({ partition, index, onImageClick }: { partition: typeof p
               <button
                 key={i}
                 onClick={(e) => { e.stopPropagation(); setImgIdx(i); }}
-                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${
-                  i === imgIdx ? 'bg-white w-4' : 'bg-white/50 hover:bg-white/80'
-                }`}
+                className={`w-1.5 h-1.5 rounded-full transition-all duration-300 ${i === imgIdx ? 'bg-white w-4' : 'bg-white/50 hover:bg-white/80'
+                  }`}
                 aria-label={`Go to image ${i + 1}`}
               />
             ))}
@@ -387,11 +386,10 @@ function PartitionCard({ partition, index, onImageClick }: { partition: typeof p
                 <button
                   key={j}
                   onClick={() => onImageClick(img.url)}
-                  className={`w-28 h-28 rounded-xl overflow-hidden border-2 transition-all duration-200 shrink-0 ${
-                    selectedProfile === j
+                  className={`w-28 h-28 rounded-xl overflow-hidden border-2 transition-all duration-200 shrink-0 ${selectedProfile === j
                       ? 'border-[#FF8800] ring-1 ring-[#FF8800]/30 shadow-sm'
                       : 'border-slate-200 hover:border-slate-300'
-                  }`}
+                    }`}
                   onMouseEnter={() => setSelectedProfile(j)}
                 >
                   <img
@@ -407,7 +405,7 @@ function PartitionCard({ partition, index, onImageClick }: { partition: typeof p
         )}
 
         <motion.a
-          href={`https://wa.me/919100044126?text=Hi!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(partition.name)}`}
+          href={`https://wa.me/918764131313?text=Hi!%20I%20want%20to%20inquire%20about%20${encodeURIComponent(partition.name)}`}
           target="_blank"
           rel="noopener noreferrer"
           whileHover={{ scale: 1.02 }}
@@ -472,11 +470,10 @@ export default function Showcase() {
                 onClick={() => setFilter(tab.id as any)}
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
-                className={`px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 flex items-center gap-2 border ${
-                  isActive
+                className={`px-6 py-3 rounded-full text-sm font-bold transition-all duration-300 flex items-center gap-2 border ${isActive
                     ? 'bg-[#FF8800] text-white border-[#FF8800] shadow-lg shadow-[#FF8800]/20 -translate-y-0.5'
                     : 'bg-white text-slate-600 border-slate-200 hover:border-slate-300 hover:text-slate-800'
-                }`}
+                  }`}
               >
                 <AnimatePresence mode="wait">
                   {isActive && (
@@ -526,7 +523,7 @@ export default function Showcase() {
                 Our team is ready to guide you to the right partition system for your project.
               </p>
               <motion.a
-                href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20VISTALINE%20partition%20systems"
+                href="https://wa.me/918764131313?text=Hi,%20I%20want%20to%20know%20more%20about%20your%20VISTALINE%20partition%20systems"
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.04, y: -2 }}

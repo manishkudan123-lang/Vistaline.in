@@ -123,7 +123,7 @@ export default function Hero() {
               </motion.div>
               <motion.a
                 ref={ctaRef}
-                href="tel:+919100044126"
+                href="tel:+91 87641 31313"
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
                 className="btn-island btn-island-white px-9 py-4.5 rounded-full bg-transparent border-2 border-white/20 text-white font-bold hover:bg-white/10 hover:border-white/30 transition-all duration-300"

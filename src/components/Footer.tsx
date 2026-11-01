@@ -69,13 +69,13 @@ export default function Footer() {
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
                 <Phone className="w-4 h-4" />
               </div>
-              <span>+91 91000 44126</span>
+              <span>+91 87641 31313</span>
             </div>
             <div className="flex items-center gap-3 text-slate-300 font-semibold text-sm mt-3">
               <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
                 <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" /></svg>
               </div>
-              <a href="mailto:info@vistaline.in" className="hover:text-[#FF8800] transition-colors">info@vistaline.in</a>
+              <a href="mailto:manish@vistaline.in" className="hover:text-[#FF8800] transition-colors">manish@vistaline.in</a>
             </div>
             <div className="flex items-center gap-2 mt-5">
               <a
@@ -135,7 +135,7 @@ export default function Footer() {
           >
             <h4 className="text-white font-bold mb-5 uppercase text-xs tracking-widest">Talk To Us</h4>
             <motion.a
-              href="https://wa.me/919100044126?text=Hi,%20I'm%20exploring%20premium%20partition%20systems%20for%20my%20office."
+              href="https://wa.me/918764131313?text=Hi,%20I'm%20exploring%20premium%20partition%20systems%20for%20my%20office."
               target="_blank"
               rel="noopener noreferrer"
               whileHover={{ scale: 1.02, y: -1 }}

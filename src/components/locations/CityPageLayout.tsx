@@ -1,15 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { 
-  MapPin, 
-  Phone, 
-  Mail, 
-  MessageCircle, 
-  ArrowRight, 
-  CheckCircle2, 
-  ShieldCheck, 
-  Layers, 
-  Building2, 
+import {
+  MapPin,
+  Phone,
+  Mail,
+  MessageCircle,
+  ArrowRight,
+  CheckCircle2,
+  ShieldCheck,
+  Layers,
+  Building2,
   Sparkles,
   ExternalLink,
   Send
@@ -39,7 +39,7 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
     const text = encodeURIComponent(
       `Hi Vistaline, My name is ${formName || 'Customer'} (Ph: ${formPhone || 'N/A'}). I have an inquiry for ${city.name}: ${formRequirement || 'General partition requirement'}`
     );
-    window.open(`https://wa.me/919100044126?text=${text}`, '_blank');
+    window.open(`https://wa.me/918764131313?text=${text}`, '_blank');
   };
 
   return (
@@ -71,7 +71,7 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
               {/* Action Buttons */}
               <div className="flex flex-wrap items-center gap-4">
                 <a
-                  href={`https://wa.me/919100044126?text=${whatsappMessage}`}
+                  href={`https://wa.me/918764131313?text=${whatsappMessage}`}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-2.5 px-6 py-3.5 rounded-xl bg-[#FF8800] hover:bg-[#E67700] text-white font-bold text-sm sm:text-base shadow-lg shadow-[#FF8800]/25 transition-all transform hover:-translate-y-0.5"
@@ -199,7 +199,7 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
                     Doorstep crated supply & certified installation service covering all commercial zones in {city.name} with transit times of 24 to 48 hours.
                   </p>
                   <a
-                    href={`https://wa.me/919100044126?text=${whatsappMessage}`}
+                    href={`https://wa.me/918764131313?text=${whatsappMessage}`}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="mt-5 inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-[#FF8800] hover:bg-[#E67700] text-white text-xs font-bold shadow-sm transition-all"
@@ -232,7 +232,7 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               {city.deliveryZones.map((zone, idx) => (
-                <div 
+                <div
                   key={idx}
                   className="flex items-center gap-3 p-4 rounded-xl bg-white/5 border border-white/10 hover:border-[#FF8800]/40 transition-colors"
                 >
@@ -262,7 +262,7 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
 
           <div className="grid md:grid-cols-3 gap-6">
             {city.popularSystems.map((item, idx) => (
-              <div 
+              <div
                 key={idx}
                 className="bg-white rounded-2xl p-6 sm:p-8 border border-slate-200/80 hover:border-[#FF8800]/40 hover:shadow-lg transition-all group flex flex-col justify-between"
               >
@@ -405,11 +405,10 @@ export default function CityPageLayout({ city }: { city: CityInfo }) {
                     key={c.id}
                     to={`/${c.id}`}
                     onClick={() => setStoredLocationId(c.id)}
-                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${
-                      isActive 
+                    className={`px-4 py-2 rounded-xl text-xs font-bold transition-all ${isActive
                         ? 'bg-[#0A3D73] text-white shadow-sm'
                         : 'bg-white border border-slate-200 text-slate-700 hover:border-[#FF8800] hover:text-[#FF8800]'
-                    }`}
+                      }`}
                   >
                     {c.name}
                   </Link>

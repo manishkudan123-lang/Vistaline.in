@@ -44,7 +44,7 @@ function NavLink({ link, isActive, onClick }: { link: typeof navLinks[0]; isActi
 function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
+      href="https://wa.me/918764131313?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
       target="_blank"
       rel="noopener noreferrer"
       whileHover={{ scale: 1.03 }}
@@ -86,9 +86,8 @@ export default function Navbar() {
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-[#0A3D73] ${
-        scrolled ? 'shadow-[0_4px_20px_rgba(0,0,0,0.15)]' : ''
-      }`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-shadow duration-300 bg-[#0A3D73] ${scrolled ? 'shadow-[0_4px_20px_rgba(0,0,0,0.15)]' : ''
+        }`}
       style={{ height: navHeight }}
     >
       <div className="h-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -176,11 +175,10 @@ export default function Navbar() {
                     <Link
                       to={link.path}
                       onClick={() => setIsMobileMenuOpen(false)}
-                      className={`block text-center px-8 py-2.5 rounded-xl text-lg font-bold tracking-tight transition-all duration-200 ${
-                        isActive
+                      className={`block text-center px-8 py-2.5 rounded-xl text-lg font-bold tracking-tight transition-all duration-200 ${isActive
                           ? 'text-white bg-[#FF8800] shadow-md shadow-[#FF8800]/20'
                           : 'text-white/80 hover:text-white hover:bg-white/10'
-                      }`}
+                        }`}
                     >
                       {link.label}
                     </Link>
@@ -204,11 +202,10 @@ export default function Navbar() {
                           setStoredLocationId(city.id);
                           setIsMobileMenuOpen(false);
                         }}
-                        className={`text-center py-2 px-2 rounded-lg text-xs font-semibold transition-all ${
-                          isActive
+                        className={`text-center py-2 px-2 rounded-lg text-xs font-semibold transition-all ${isActive
                             ? 'bg-[#FF8800] text-white shadow-sm'
                             : 'bg-white/10 text-white/90 hover:bg-white/20'
-                        }`}
+                          }`}
                       >
                         {city.name}
                       </Link>
@@ -225,7 +222,7 @@ export default function Navbar() {
                 className="mt-4 w-full max-w-sm"
               >
                 <a
-                  href="https://wa.me/919100044126?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
+                  href="https://wa.me/918764131313?text=Hi,%20I%20want%20to%20discuss%20my%20office%20partition%20project%20directly."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex items-center justify-center gap-2.5 bg-[#FF8800] hover:bg-[#E67700] text-white py-3 rounded-xl text-base font-bold shadow-md shadow-[#FF8800]/20 transition-all duration-200"
