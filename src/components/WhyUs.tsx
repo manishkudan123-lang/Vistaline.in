@@ -38,7 +38,7 @@ const reasons = [
   {
     icon: ListVideo,
     title: '500+ Projects Done',
-    desc: 'Over 12 years of industry experience and 500+ successful installations across IT parks, hospitals, and showrooms.',
+    desc: 'Over 18 years of industry experience and 500+ successful installations across IT parks, hospitals, and showrooms.',
     span: 'lg:col-span-2'
   }
 ];

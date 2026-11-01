@@ -8,7 +8,7 @@ import SpotlightReveal from './SpotlightReveal';
 
 const stats = [
   { value: '500+', label: 'Projects Done' },
-  { value: '12+', label: 'Years Experience' },
+  { value: '18+', label: 'Years Experience' },
   { value: '15+', label: 'Cities Served' },
 ];
 

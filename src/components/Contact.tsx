@@ -217,13 +217,12 @@ export default function Contact() {
                 <h5 className="font-bold text-[#1C1B1B] text-sm mb-2">Hyderabad Office</h5>
                 <p className="font-semibold text-slate-800 text-sm mb-2">Vistaline Profiles Pvt. Ltd.</p>
                 <p className="text-xs text-slate-600 leading-relaxed mb-4">
-                  Plot No. 7 & 8, Sy No. 164/B1/A,<br />
-                  164/B1/B, 164/B1/C, 164/B1/D,<br />
-                  Thondapally, Shamshabad—501218,<br />
-                  Telangana
-                </p>
+                  PLOT NO. 7 & 8 SY NO 164/B1/A ,<br />
+                  164/B1/B , 164/B1/C,164/B1/D <br />
+                  THONDAPALLY SHAMSHABAD-501218 Glasify india,<br />
+                  Thondapalli, Telangana 501218</p>
                 <a
-                  href="https://maps.google.com/?q=Plot+No.+7+%26+8,+Sy+No.+164/B1/A,+Thondapally,+Shamshabad+-+501218,+Telangana"
+                  href="https://share.google/Zt0minIfpMTjSBhfj"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center gap-1 text-xs font-semibold text-[#FF8800] hover:text-[#E67700] transition-colors"
@@ -232,7 +231,7 @@ export default function Contact() {
                 </a>
               </div>
               <iframe
-                src="https://www.google.com/maps?q=Plot+No.+7+%26+8,+Sy+No.+164/B1/A,+Thondapally,+Shamshabad+-+501218,+Telangana&output=embed"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3810.5714906711046!2d78.3698135749312!3d17.23956488362261!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcbbff00c9849b9%3A0x20c2f8ea31e501f8!2sVISTALINE%20PROFILES%20PRIVATE%20LMITED%20HYDERABAD!5e0!3m2!1sen!2sin!4v1793547876889!5m2!1sen!2sin"
                 title="Hyderabad Office Map"
                 className="w-1/3 min-h-[160px]"
                 style={{ border: 0 }}

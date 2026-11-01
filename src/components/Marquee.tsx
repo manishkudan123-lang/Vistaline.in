@@ -12,7 +12,7 @@ const items = [
   'Pan-India Delivery',
   'Premium Quality',
   '500+ Projects',
-  '12+ Years',
+  '18+ Years',
   'BLR Series',
   'Hyderabad HQ',
   'Chennai Office',

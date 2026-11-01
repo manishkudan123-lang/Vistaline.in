@@ -152,7 +152,7 @@ export default function Footer() {
             </motion.a>
             <div className="mt-6 flex items-start gap-3 text-slate-400 text-sm">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />
-              <span>Plot No. 7 & 8, Thondapally, Shamshabad—501218, Telangana</span>
+              <span>PLOT NO. 7 & 8 SY NO 164/B1/A , 164/B1/B , 164/B1/C,164/B1/D THONDAPALLY SHAMSHABAD-501218 Glasify india, Thondapalli, Telangana 501218</span>
             </div>
             <div className="mt-6 flex items-start gap-3 text-slate-400 text-sm">
               <MapPin className="w-4 h-4 mt-0.5 shrink-0" />

@@ -141,7 +141,7 @@ export default function About() {
                 transition={{ duration: 0.6, delay: 0.6, ease: [0.25, 0.1, 0.25, 1] }}
                 className="absolute -bottom-5 -left-5 sm:-bottom-7 sm:-left-7 bg-white p-5 sm:p-7 rounded-2xl shadow-premium-xl border border-slate-100 max-w-[210px] sm:max-w-[230px]"
               >
-                <h4 className="text-5xl font-display font-bold text-[#FF8800] mb-1">12+</h4>
+                <h4 className="text-5xl font-display font-bold text-[#FF8800] mb-1">18+</h4>
                 <p className="text-xs uppercase tracking-wider font-bold text-slate-700 leading-tight">
                   YEARS BUILDING <br />PREMIUM PARTITION<br /> SYSTEMS
                 </p>
